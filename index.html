@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bosco M Music CR - Bøscö M</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      padding: 40px 20px 20px;
+      background: #1f1f1f;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8em;
+      letter-spacing: 2px;
+    }
+    header h2 {
+      margin: 5px 0 20px;
+      font-weight: 400;
+      font-style: italic;
+      color: #ffcc00;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd633;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .btn-paypal {
+      display: inline-block;
+      background-color: #ffc439;
+      color: #111;
+      padding: 15px 30px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1.2em;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+    .btn-paypal:hover {
+      background-color: #ffb347;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #ffcc00;
+      font-size: 1.5em;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .social-links a:hover {
+      color: #ffd633;
+    }
+    .tracks {
+      margin-top: 30px;
+    }
+    iframe {
+      margin: 15px 0;
+      border-radius: 10px;
+      border: none;
+      width: 100%;
+      max-width: 600px;
+      height: 166px;
+    }
+    footer {
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+      background: #1f1f1f;
+      margin-top: 50px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Bosco M Music CR</h1>
+    <h2>Bøscö M</h2>
+    <nav>
+      <a href="#tracks">Tracks</a>
+      <a href="#redes">Redes Sociales</a>
+      <a href="#apoyo">Apoyar</a>
+    </nav>
+  </header>
+
+  <section id="tracks">
+    <h3>Tracks Originales</h3>
+    <div>
+      <!-- Ejemplo embed de SoundCloud, cambia el URL a uno real -->
+      <iframe 
+        width="100%" 
+        height="166" 
+        scrolling="no" 
+        frameborder="no" 
+        allow="autoplay" 
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789&color=%23ffcc00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
+    </div>
+  </section>
+
+  <section id="redes">
+    <h3>Síguelo en sus redes</h3>
+    <div class="social-links">
+      <a href="https://soundcloud.com/tu_usuario" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+      <a href="https://www.youtube.com/c/tu_canal" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.twitch.tv/tu_usuario" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+      <a href="https://www.instagram.com/tu_usuario" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/tu_usuario" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+  </section>
+
+  <section id="apoyo">
+    <h3>Apoya a Bosco M</h3>
+    <a href="https://www.paypal.com/ncp/payment/5QLF7AQYLHHTY" target="_blank" class="btn-paypal" rel="noopener">
+      Donar vía PayPal
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 Bosco M Music CR | Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
