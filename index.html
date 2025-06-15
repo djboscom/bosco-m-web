@@ -68,9 +68,6 @@
     .social-links a:hover {
       color: #ffd633;
     }
-    .tracks {
-      margin-top: 30px;
-    }
     iframe {
       margin: 15px 0;
       border-radius: 10px;
@@ -78,6 +75,17 @@
       width: 100%;
       max-width: 600px;
       height: 166px;
+    }
+    .youtube-links a {
+      display: block;
+      margin: 10px 0;
+      color: #ffcc00;
+      font-weight: bold;
+      font-size: 1.1em;
+      text-decoration: none;
+    }
+    .youtube-links a:hover {
+      color: #ffd633;
     }
     footer {
       padding: 20px;
@@ -102,27 +110,35 @@
   </header>
 
   <section id="tracks">
-    <h3>Tracks Originales</h3>
-    <div>
-      <!-- Ejemplo embed de SoundCloud, cambia el URL a uno real -->
-      <iframe 
-        width="100%" 
-        height="166" 
-        scrolling="no" 
-        frameborder="no" 
-        allow="autoplay" 
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/123456789&color=%23ffcc00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
+    <h3>Tracks Originales y Sesiones</h3>
+
+    <!-- SoundCloud Tracks -->
+    <iframe 
+      allow="autoplay" 
+      src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/G4vlPal7Z2yM8nBSon&color=%23ffcc00&auto_play=false"
+    ></iframe>
+
+    <iframe 
+      allow="autoplay" 
+      src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/fgTCpJCaUIALewjDMI&color=%23ffcc00&auto_play=false"
+    ></iframe>
+
+    <!-- YouTube Enlaces -->
+    <div class="youtube-links">
+      <a href="https://youtu.be/9jVJLWQeh3g?si=aczfYnd6XDfLEmGx" target="_blank">Ver sesión: YouTube 1</a>
+      <a href="https://youtu.be/l4blAWSeLY8?si=4CV6f1HSv6Phe7JU" target="_blank">Ver sesión: YouTube 2</a>
+      <a href="https://youtu.be/DRzgdogrBxU?si=m66GHVtnoPPIt6wS" target="_blank">Ver sesión: YouTube 3</a>
+      <a href="https://youtu.be/Kjlt37bTRQA?si=5TxlR2DZVP0nqqec" target="_blank">Ver sesión: YouTube 4</a>
     </div>
   </section>
 
   <section id="redes">
     <h3>Síguelo en sus redes</h3>
     <div class="social-links">
-      <a href="https://soundcloud.com/tu_usuario" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
-      <a href="https://www.youtube.com/c/tu_canal" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.twitch.tv/tu_usuario" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
-      <a href="https://www.instagram.com/tu_usuario" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="https://twitter.com/tu_usuario" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      <a href="https://on.soundcloud.com/CgGClmtWprnHK1VQq0" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
+      <a href="https://www.youtube.com/@BoscoM_music" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://m.twitch.tv/boscom_" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+      <a href="https://x.com/McBoscoCR?t=slmO49XMiT4l4yapuL_WFg&s=09" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
     </div>
   </section>
 
