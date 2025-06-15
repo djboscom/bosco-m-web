@@ -1,156 +1,163 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Bosco M Music CR - Bøscö M</title>
+  <meta charset="UTF-8">
+  <title>Bosco M - Sesiones & Música</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #121212;
-      color: #eee;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #0a0a0a;
+      color: #f5f5f5;
+      line-height: 1.6;
     }
     header {
-      padding: 40px 20px 20px;
-      background: #1f1f1f;
+      background-color: #000;
+      padding: 60px 20px 30px;
+      text-align: center;
     }
     header h1 {
+      font-size: 3em;
       margin: 0;
-      font-size: 2.8em;
-      letter-spacing: 2px;
     }
     header h2 {
-      margin: 5px 0 20px;
-      font-weight: 400;
-      font-style: italic;
       color: #ffcc00;
+      font-weight: 300;
+      margin-top: 10px;
+    }
+    nav {
+      margin-top: 30px;
     }
     nav a {
       margin: 0 15px;
       color: #ffcc00;
       text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1em;
-      transition: color 0.3s;
+      font-weight: bold;
     }
     nav a:hover {
       color: #ffd633;
     }
+
     section {
-      padding: 30px 20px;
+      padding: 40px 20px;
       max-width: 900px;
-      margin: 0 auto;
+      margin: auto;
     }
-    .btn-paypal {
-      display: inline-block;
-      background-color: #ffc439;
-      color: #111;
-      padding: 15px 30px;
-      border-radius: 6px;
-      font-weight: 700;
-      font-size: 1.2em;
-      text-decoration: none;
-      margin-top: 20px;
-      transition: background-color 0.3s;
-    }
-    .btn-paypal:hover {
-      background-color: #ffb347;
-    }
-    .social-links a {
-      margin: 0 10px;
+
+    .section-title {
+      font-size: 2em;
+      margin-bottom: 20px;
       color: #ffcc00;
-      font-size: 1.5em;
-      text-decoration: none;
-      transition: color 0.3s;
     }
-    .social-links a:hover {
-      color: #ffd633;
-    }
+
     iframe {
-      margin: 15px 0;
-      border-radius: 10px;
-      border: none;
+      display: block;
       width: 100%;
       max-width: 600px;
       height: 166px;
+      margin: 20px auto;
+      border: none;
+      border-radius: 8px;
     }
+
     .youtube-links a {
       display: block;
-      margin: 10px 0;
+      text-align: center;
+      background: #111;
+      padding: 10px;
+      margin: 10px auto;
+      max-width: 600px;
+      border-radius: 6px;
       color: #ffcc00;
-      font-weight: bold;
-      font-size: 1.1em;
       text-decoration: none;
+      transition: background 0.3s;
     }
     .youtube-links a:hover {
-      color: #ffd633;
+      background: #222;
     }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      font-size: 1.8em;
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    .btn-paypal {
+      display: inline-block;
+      background: #ffc439;
+      color: #111;
+      padding: 15px 30px;
+      border-radius: 6px;
+      font-size: 1.1em;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 30px;
+      transition: background 0.3s;
+    }
+    .btn-paypal:hover {
+      background: #ffb347;
+    }
+
     footer {
+      background-color: #000;
+      text-align: center;
       padding: 20px;
       font-size: 0.9em;
-      color: #666;
-      background: #1f1f1f;
-      margin-top: 50px;
+      color: #777;
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
   <header>
-    <h1>Bosco M Music CR</h1>
-    <h2>Bøscö M</h2>
+    <h1>Bosco M</h1>
+    <h2>Música electrónica & sesiones en vivo</h2>
     <nav>
-      <a href="#tracks">Tracks</a>
-      <a href="#redes">Redes Sociales</a>
-      <a href="#apoyo">Apoyar</a>
+      <a href="#sesiones">Sesiones</a>
+      <a href="#redes">Redes</a>
+      <a href="#apoyo">Apóyame</a>
     </nav>
   </header>
 
-  <section id="tracks">
-    <h3>Tracks Originales y Sesiones</h3>
+  <section id="sesiones">
+    <h3 class="section-title">Sesiones</h3>
 
-    <!-- SoundCloud Tracks -->
-    <iframe 
-      allow="autoplay" 
-      src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/G4vlPal7Z2yM8nBSon&color=%23ffcc00&auto_play=false"
-    ></iframe>
+    <!-- SoundCloud players -->
+    <iframe src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/G4vlPal7Z2yM8nBSon&color=%23ffcc00"></iframe>
+    <iframe src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/fgTCpJCaUIALewjDMI&color=%23ffcc00"></iframe>
 
-    <iframe 
-      allow="autoplay" 
-      src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/fgTCpJCaUIALewjDMI&color=%23ffcc00&auto_play=false"
-    ></iframe>
-
-    <!-- YouTube Enlaces -->
+    <!-- YouTube session links -->
     <div class="youtube-links">
-      <a href="https://youtu.be/9jVJLWQeh3g?si=aczfYnd6XDfLEmGx" target="_blank">Ver sesión: YouTube 1</a>
-      <a href="https://youtu.be/l4blAWSeLY8?si=4CV6f1HSv6Phe7JU" target="_blank">Ver sesión: YouTube 2</a>
-      <a href="https://youtu.be/DRzgdogrBxU?si=m66GHVtnoPPIt6wS" target="_blank">Ver sesión: YouTube 3</a>
-      <a href="https://youtu.be/Kjlt37bTRQA?si=5TxlR2DZVP0nqqec" target="_blank">Ver sesión: YouTube 4</a>
+      <a href="https://youtu.be/9jVJLWQeh3g?si=aczfYnd6XDfLEmGx" target="_blank">Sesión 1 en YouTube</a>
+      <a href="https://youtu.be/l4blAWSeLY8?si=4CV6f1HSv6Phe7JU" target="_blank">Sesión 2 en YouTube</a>
+      <a href="https://youtu.be/DRzgdogrBxU?si=m66GHVtnoPPIt6wS" target="_blank">Sesión 3 en YouTube</a>
+      <a href="https://youtu.be/Kjlt37bTRQA?si=5TxlR2DZVP0nqqec" target="_blank">Sesión 4 en YouTube</a>
     </div>
   </section>
 
   <section id="redes">
-    <h3>Síguelo en sus redes</h3>
-    <div class="social-links">
-      <a href="https://on.soundcloud.com/CgGClmtWprnHK1VQq0" target="_blank" aria-label="SoundCloud"><i class="fab fa-soundcloud"></i></a>
-      <a href="https://www.youtube.com/@BoscoM_music" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-      <a href="https://m.twitch.tv/boscom_" target="_blank" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
-      <a href="https://x.com/McBoscoCR?t=slmO49XMiT4l4yapuL_WFg&s=09" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <h3 class="section-title">Redes sociales</h3>
+    <div class="social-icons">
+      <a href="https://on.soundcloud.com/CgGClmtWprnHK1VQq0" target="_blank"><i class="fab fa-soundcloud"></i></a>
+      <a href="https://www.youtube.com/@BoscoM_music" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://m.twitch.tv/boscom_" target="_blank"><i class="fab fa-twitch"></i></a>
+      <a href="https://x.com/McBoscoCR?t=slmO49XMiT4l4yapuL_WFg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
     </div>
   </section>
 
-  <section id="apoyo">
-    <h3>Apoya a Bosco M</h3>
-    <a href="https://www.paypal.com/ncp/payment/5QLF7AQYLHHTY" target="_blank" class="btn-paypal" rel="noopener">
-      Donar vía PayPal
-    </a>
+  <section id="apoyo" style="text-align: center;">
+    <h3 class="section-title">¿Quieres apoyarme?</h3>
+    <a href="https://www.paypal.com/ncp/payment/5QLF7AQYLHHTY" target="_blank" class="btn-paypal">Donar vía PayPal</a>
   </section>
 
   <footer>
-    &copy; 2025 Bosco M Music CR | Todos los derechos reservados.
+    &copy; 2025 Bosco M | Página inspirada por emedj.com | Desarrollado por ChatGPT
   </footer>
 
 </body>
