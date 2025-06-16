@@ -189,7 +189,7 @@
 <body>
 
   <header>
-    <img src="data:image/png;base64,iVBORw0KGgoAAA..." alt="Logo de Bosco M" />
+    <img src="data:image/png;base64,iVBORw0KGgoAAA..." alt="Logo oficial de Bosco M, DJ y productor de música electrónica" />
     <h1>Bosco M</h1>
     <h2>Música electrónica & sesiones en vivo</h2>
     <nav>
@@ -207,24 +207,24 @@
       <iframe src="https://w.soundcloud.com/player/?url=https%3A//on.soundcloud.com/fgTCpJCaUIALewjDMI&color=%23ffcc00"></iframe>
 
       <div class="youtube-links">
-        <a href="https://youtu.be/9jVJLWQeh3g?si=aczfYnd6XDfLEmGx" target="_blank">Sesión 1 en YouTube</a>
-        <a href="https://youtu.be/l4blAWSeLY8?si=4CV6f1HSv6Phe7JU" target="_blank">Sesión 2 en YouTube</a>
-        <a href="https://youtu.be/DRzgdogrBxU?si=m66GHVtnoPPIt6wS" target="_blank">Sesión 3 en YouTube</a>
-        <a href="https://youtu.be/Kjlt37bTRQA?si=5TxlR2DZVP0nqqec" target="_blank">Sesión 4 en YouTube</a>
+        <a href="https://youtu.be/9jVJLWQeh3g?si=aczfYnd6XDfLEmGx" target="_blank" rel="noopener noreferrer">Sesión 1 en YouTube</a>
+        <a href="https://youtu.be/l4blAWSeLY8?si=4CV6f1HSv6Phe7JU" target="_blank" rel="noopener noreferrer">Sesión 2 en YouTube</a>
+        <a href="https://youtu.be/DRzgdogrBxU?si=m66GHVtnoPPIt6wS" target="_blank" rel="noopener noreferrer">Sesión 3 en YouTube</a>
+        <a href="https://youtu.be/Kjlt37bTRQA?si=5TxlR2DZVP0nqqec" target="_blank" rel="noopener noreferrer">Sesión 4 en YouTube</a>
       </div>
 
       <div style="text-align: center;">
-        <a href="https://www.twitch.tv/boscom_" target="_blank" class="btn-twitch">Ver en vivo en Twitch</a>
+        <a href="https://www.twitch.tv/boscom_" target="_blank" rel="noopener noreferrer" class="btn-twitch">Ver en vivo en Twitch</a>
       </div>
     </section>
 
     <section id="redes">
       <h3 class="section-title">Redes sociales</h3>
       <div class="social-icons">
-        <a href="https://on.soundcloud.com/CgGClmtWprnHK1VQq0" target="_blank"><i class="fab fa-soundcloud"></i></a>
-        <a href="https://www.youtube.com/@BoscoM_music" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://m.twitch.tv/boscom_" target="_blank"><i class="fab fa-twitch"></i></a>
-        <a href="https://x.com/McBoscoCR?t=slmO49XMiT4l4yapuL_WFg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://on.soundcloud.com/CgGClmtWprnHK1VQq0" target="_blank" rel="noopener noreferrer"><i class="fab fa-soundcloud"></i></a>
+        <a href="https://www.youtube.com/@BoscoM_music" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        <a href="https://m.twitch.tv/boscom_" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a>
+        <a href="https://x.com/McBoscoCR?t=slmO49XMiT4l4yapuL_WFg&s=09" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
       </div>
     </section>
 
@@ -232,13 +232,32 @@
       <h3 class="section-title">¿Quieres apoyarme?</h3>
       <a href="https://www.paypal.com/ncp/payment/5QLF7AQYLHHTY" 
          target="_blank" 
+         rel="noopener noreferrer"
          class="btn-paypal">Donar vía PayPal</a>
     </section>
   </main>
+
+  <button id="toTopBtn" title="Volver arriba"><i class="fas fa-arrow-up"></i></button>
 
   <footer>
     © 2025 Bosco M. Todos los derechos reservados.
   </footer>
 
- 
- 
+  <script>
+    // Mostrar u ocultar botón "volver arriba"
+    const toTopBtn = document.getElementById('toTopBtn');
+    window.onscroll = () => {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        toTopBtn.style.display = "block";
+      } else {
+        toTopBtn.style.display = "none";
+      }
+    };
+
+    toTopBtn.addEventListener('click', () => {
+      window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+  </script>
+
+</body>
+</html>
